@@ -1,4 +1,3 @@
-SELECT SUM(CITY.POPULATION)
-FROM COUNTRY
-JOIN CITY ON CITY.CountryCode = COUNTRY.Code
-WHERE COUNTRY.CONTINENT = 'Asia';
+SELECT *
+FROM people
+JOIN states ON people.state_code = states.state_abbrev
